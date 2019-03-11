@@ -4,8 +4,7 @@ services:
     image: bb:latest
     restart: always
     ports:
-      - 80:80
-      - 443:443
+      - 8080:80
     volumes:
-      - ./www/admin7.dineroloco.com.back:/opt/admin7.dineroloco.com
+      - ./admin7.dineroloco.com:/opt/admin7.dineroloco.com
       - ./000-project.conf:/etc/apache2/sites-enabled/000-project.conf
