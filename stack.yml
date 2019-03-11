@@ -4,7 +4,7 @@ services:
     image: bb:latest
     restart: always
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - ./old:/old
       - ./000-project.conf:/etc/apache2/sites-enabled/000-project.conf
