@@ -6,5 +6,5 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./admin7.dineroloco.com:/opt/admin7.dineroloco.com
+      - ./old:/old
       - ./000-project.conf:/etc/apache2/sites-enabled/000-project.conf
