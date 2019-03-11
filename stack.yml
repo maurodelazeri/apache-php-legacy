@@ -1,0 +1,11 @@
+version: "3"
+services:
+  bb:
+    image: bb:latest
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./www/admin7.dineroloco.com.back:/opt/admin7.dineroloco.com
+      - ./000-project.conf:/etc/apache2/sites-enabled/000-project.conf
